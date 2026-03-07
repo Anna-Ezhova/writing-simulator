@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <%- include('partials/head'); %>
+</head>
+<body>
+    <main>
+
+        <div class="main_container">
+            <div id="output_container" class="container">
+
+                <h2>Die Aufgabe, die Sie bearbeitet haben lautet:</h2>
+
+                <p>
+                    <%- task %>
+                </p>
+
+
+                <h2>
+                    Ihr Beitrag:
+                </h2>
+
+                <p>
+                    <%- input%>
+                </p>
+
+            <h2>Die Aufgabe wurde wie folgend evaluiert:</h2>
+
+            
+            <div id="outdut_text">
+
+                <%- output %>
+            </div>
+
+            <a href="/">Erneut versuchen</a>
+            
+        </div>
+        </div>
+
+    </main>
+
+
+</body>
+</html>

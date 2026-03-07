@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class="main_container container-lg">
+        <div id="start_container" class=" container-lg screen active"> 
+            
+            <h1>Deutsch-Prüfungs-Simulator</h1>
+            <p>
+            Diese App ist ein Simulator für den Schreib-Teil der DTZ-Prüfung.<br>
+            Sie können eine Beispiel-Aufgabe wählen.<br>
+            Oder Sie schreiben eine eigene Aufgabe.<br>
+            Dann schreiben Sie Ihren Text.<br>
+            Die App bewertet Ihren Text automatisch mit Google AI.<br>
+            So üben Sie für die Prüfung.<br>
+            So verbessern Sie Ihr Schreiben.
+            </p>
+            <button id="start_btn" class="btn btn-success btn-lg" onclick="navigateTo('feature_container')">Start</button>
+
+        </div>
+        <div id="feature_container" class="container-lg screen" >
+
+
+            <div class="feature_list_wrapper">
+                <div>
+                    <h2>Aufgabe</h2>
+
+                <p>
+                   Sie können eine Beispiel-Aufgabe wählen. <br>
+
+                    Sie können diese Aufgabe lösen.
+                </p>
+        
+                <ul id="topic_list" class="features">
+
+                <li class="btn btn-outline-success topic" id="0">Aufgabe A: Brief an Vermieter</li>
+                <li class="btn btn-outline-success topic" id="1">Aufgabe B: E-Mail an Nachbarin</li>
+                </ul>
+                    <p>
+
+                    Oder Sie schreiben eine eigene Aufgabe. <br>
+
+                    So üben Sie für verschiedene Deutsch-Prüfungen.</p>
+
+                <button class="btn btn-outline-success btn-lg" id="customTaskBtn" onclick="navigateTo('custom_task_container')">Eigene Aufgabenstellung</button>
+                
+
+                
+                </div>
+
+                <!-- TODO -->
+                <!-- <div>
+                    <h2>Timer</h2>
+                <ul id="timer_list" class="features">
+
+                    <li id="timer_yes">Sit</li>
+                    <li id="timer_no">Amet</li>
+
+                </ul>
+                </div> -->
+            </div>
+
+
+        </div>
+        <div id="custom_task_container" class="container-lg screen">
+             <div> <button id="go_back_btn1" class="btn btn-outline-success" onclick="goBack()"> &larr;</button></div>
+            <div class="card text-info-emphasis bg-info-subtle  border border-info-subtle">
+              
+                <div class="card-body">
+                  Bitte schreiben Sie Ihre Aufgabe unten in das Feld. <br>
+
+                Das System bewertet nur Texte für eine Deutsch-Prüfung. <br>
+
+                Sie schreiben einen anderen Text? <br>
+
+                Dann wird der Text <strong>nicht</strong> bewertet.  
+                </div>
+            </div>
+          
+            <div class="form-group">
+                
+                <label class="form-label" for="comment">Ihre Aufgabenstellung:</label>
+                <textarea class="form-control" rows="5"  id="custom_task"  required></textarea>
+            </div>
+
+            <button id="submitCustomBtn" class="btn btn-success" >Weiter</button> 
+            
+        </div>
+        <div id="text_form_container" class="screen" >
+
+           <div> <button id="go_back_btn2" class="btn btn-outline-success" onclick="goBack()"> &larr;</button></div>
+            <div class="card text-info-emphasis bg-info-subtle  border border-info-subtle" >
+
+                
+                <div class="card-body">
+                      Bitte schreiben Sie Ihre Lösung unten in das Feld. <br>
+
+                Das System bewertet nur Texte für eine Deutsch-Prüfung. <br>
+
+                Sie schreiben einen anderen Text? <br>
+
+                Dann wird der Text <strong>nicht</strong> bewertet.
+                </div>
+
+
+            </div>
+            
+
+            <h4 id="task_name"></h3>
+        
+
+           <form action="http://localhost:3000/api/v1/gemini" method="post" id="form">
+
+            <textarea type="text" name="task" rows="10" cols="20" id="task_text" readonly required  ></textarea>
+            <div class="form-group">
+                <label for="input" class="form-label">Ihre Lösung: </label>
+                <textarea class="form-control" rows="10"  id="input_text" name="input" required></textarea>
+            </div>
+
+            <button id="submit_btn" class="btn btn-success">Überprüfen</button> 
+
+                </form>
+                          
+            
+            
+        </div>
+        
+        
+    
+    </div>
+        <div id="loading_container" class="loading_screen">
+
+            <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="scripts/script.js"></script> 
+   
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
