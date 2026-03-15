@@ -5,71 +5,64 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/style.css">
 <style>
+	/* ===== Base ===== */
 	body {
 		font-family: "Helvetica Neue", Arial, sans-serif;
-		background: #ffffff;
 		color: #222;
-		line-height: 1.6;
+		background: #fff;
+		line-height: 1.4;
+		margin: 20px;
 	}
 
+	/* ===== Container ===== */
 	.main-container {
-		max-width: 850px;
-		margin: 40px auto;
-		padding: 0 15px;
+		max-width: 700px;
+		margin: auto;
 	}
 
 	/* ===== Headings ===== */
 	h1,
-	h2,
-	h3 {
+	h2 {
 		font-weight: 500;
-		margin-bottom: 15px;
+		margin: 10px 0;
 	}
 
 	h1 {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 
 	h2 {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
-	/* ===== Paragraphs ===== */
-	.result-paragraph {
-		margin-bottom: 20px;
-		font-size: 1rem;
-		line-height: 1.5;
-		padding: 0.5rem 0;
-	}
-
-	/* ===== Section Box (optional for clarity) ===== */
-	.section-box {
-		background: #f8f8f8;
-		padding: 15px 18px;
-		border-left: 4px solid #444;
-		margin-bottom: 25px;
-		white-space: pre-wrap;
-		/* preserves line breaks if needed */
-	}
 
 	/* ===== Buttons ===== */
 	.btn-primary {
 		background-color: #444;
 		border-color: #444;
+		color: #fff;
+		padding: 6px 12px;
+		font-size: 0.95rem;
 	}
 
 	.btn-primary:hover {
 		background-color: #333;
-		border-color: #333;
 	}
 
 	.btn-secondary {
 		background-color: #e9e9e9;
 		color: #222;
 		border-color: #ddd;
+		padding: 6px 12px;
+		font-size: 0.95rem;
 	}
 
-	.btn-back {
-		margin-bottom: 20px;
+	/* ===== Section Box for Results ===== */
+	.section-box {
+		background: #f8f8f8;
+		padding: 0.5rem;
+		border-left: 3px solid #444;
+		margin-bottom: 10px;
+		white-space: pre-wrap;
 	}
 </style>
