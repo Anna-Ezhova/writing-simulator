@@ -1,47 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <%- include('partials/head'); %>
+	<%- include('partials/head'); %>
 </head>
+
 <body>
-    <main>
+	<main>
 
-        <div class="main_container">
-            <div id="output_container" class="container">
+		<div class="main_container">
+			<div id="output_container" class="container">
+
+				<div class="section-box">
+
+					<h2>Die Evalution war nicht erfolgreich</h2>
+
+					<p class="result-paragraph">
+
+						Es scheint, dass eine oder mehrere ihre Eingaben inkorrekt waren und deshalb nicht evaluiert sein könnten.
+						Überprüfen Sie bitte ihre Eingaben und versuchen erneut.
+					</p>
+				</div>
+
+				<div class="section-box">
+					<h2>Die Aufgabe, die Sie bearbeitet haben lautet:</h2>
+
+					<p class="result-paragraph">
+						<%- task %>
+					</p>
+				</div>
+
+				<div class="section-box">
+					<h2>
+						Ihr Beitrag:
+					</h2>
+
+					<p class="result-paragraph">
+						<%- input%>
+					</p>
+				</div>
 
 
-                <h2>Die Evalution war nicht erfolgreich</h2>
+				<a class="btn btn-primary" href="/">Erneut versuchen</a>
 
-                <p>
-                    
-                    Es scheint, dass eine oder mehrere ihre Eingaben inkorrekt waren und deshalb nicht evaluiert sein könnten. Überprüfen Sie bitte ihre Eingaben und versuchen erneut. 
-                </p>
+			</div>
+		</div>
 
-                <h2>Die Aufgabe, die Sie bearbeitet haben lautet:</h2>
-
-                <p>
-                    <%- task %>
-                </p>
-
-
-                <h2>
-                    Ihr Beitrag:
-                </h2>
-
-                <p>
-                    <%- input%>
-                </p>
-
-            
-
-            <a href="/">Erneut versuchen</a>
-            
-        </div>
-        </div>
-
-    </main>
+	</main>
 
 
 </body>
+
 </html>
