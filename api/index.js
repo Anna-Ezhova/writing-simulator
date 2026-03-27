@@ -31,7 +31,7 @@ app.use(express.static(path.join(root, "public")));
 
 app.use(sessionMiddleware);
 app.use(router);
-app.use(errorMiddleware);
+
 
 // 404
 app.use((req, res) => {

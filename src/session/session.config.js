@@ -1,6 +1,6 @@
 import session from "express-session";
 
-const SECRET = process.env.SESSION_SECRET
+const SECRET = process.env.SESSION_SECRET;
 
 const sessionMiddleware = session({
   name: "api-session",
@@ -9,8 +9,8 @@ const sessionMiddleware = session({
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
-    maxAge: 300_000
-  }
-}) 
+    maxAge: 300_000,
+  },
+});
 
-export default sessionMiddleware
+export default sessionMiddleware;

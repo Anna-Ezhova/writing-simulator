@@ -115,9 +115,12 @@ submitCustomBtn.addEventListener("click", function (event) {
   }
 });
 
+//Loading Container listens to the submit event
+
 form.addEventListener("submit", () => {
   loadingContainer.classList.add("active");
 });
+
 
 async function getTestOutput(prompt) {
   //URL!!!

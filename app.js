@@ -29,20 +29,11 @@ const __dirname = dirname(__filename);
 
 app.use("/", express.static(path.join(__dirname, "public")));
 
-app.post("/api", (req, res) => {
-  const prompt = req.body.prompt;
-
-  console.log(prompt); // check if it works
-
-  res.json({
-    message: "Received!",
-    yourPrompt: prompt,
-  });
-});
 
 app.use(sessionMiddleware);
 app.use(router);
-app.use(errorMiddleware);
+
+
 
 //redirect by status 404
 

@@ -1,6 +1,5 @@
 const buildPrompt = (task, input) => {
-
-return `
+  return `
 Du bewertest einen Text im Rahmen eines DTZ-Schreibtests.
 
 Es liegt folgende Aufgabenstellung vor:
@@ -29,7 +28,6 @@ Gib die Antwort ausschließlich als einen einzelnen String aus, der direkt in HT
 Füge keine Einleitung, keine abschließenden Bemerkungen und keine Rückfragen hinzu.
 
 `;
+};
 
-}
-
-export default buildPrompt
+export default buildPrompt;
