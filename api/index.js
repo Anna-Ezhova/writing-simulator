@@ -9,7 +9,7 @@ import { dirname } from "path";
 
 import sessionMiddleware from "../src/session/session.config.js";
 import router from "../src/routes/routes.js";
-import errorMiddleware from "../src/middleware/error.js";
+
 
 const app = express();
 
