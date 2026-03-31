@@ -1,3 +1,10 @@
+
+/*
+*This controller is responsible for rendering the final result on one of ejs pages
+*If output from AI-API is correct - renders result page
+*If output is "error" renders Error page
+*/
+
 export function getResult(req, res, next) {
   const stored = req.session.output;
 

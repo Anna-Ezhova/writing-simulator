@@ -1,3 +1,7 @@
+/**
+ * Express Sessison Instance
+*/
+
 import session from "express-session";
 
 const SECRET = process.env.SESSION_SECRET;

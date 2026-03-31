@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
+	<title>Deutsch-Prüfungs-Simulator</title>
 </head>
 
 <body>
 	<main>
 		<div class="main_container container-lg">
+
+			<!--Start Screen-->
 			<div id="start_container" class=" container-lg screen active">
 
 				<h1>Deutsch-Prüfungs-Simulator</h1>
@@ -29,6 +31,7 @@
 			</div>
 			<div id="feature_container" class="container-lg screen">
 
+				<!--Choosing Task Screen-->
 
 				<div class="feature_list_wrapper">
 					<div>
@@ -63,6 +66,8 @@
 
 
 			</div>
+
+			<!--Add your own task screen-->
 			<div id="custom_task_container" class="container-lg screen">
 				<div> <button id="go_back_btn1" class="btn btn-secondary btn-back" onclick="goBack()"> &larr;</button></div>
 
@@ -99,7 +104,7 @@
 				<h4 id="task_name">
 				</h4>
 
-
+				<!--Submit the Solution Screen-->
 				<form action="https://writing-simulator.vercel.app/api/v1/gemini" method="post" id="form">
 
 					<textarea type="text" rows="8" name="task" id="task_text" readonly required></textarea>
@@ -119,6 +124,7 @@
 
 
 		</div>
+		<!--Loading Screen-->
 		<div id="loading_container" class="loading_screen">
 
 			<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">

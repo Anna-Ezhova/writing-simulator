@@ -1,3 +1,11 @@
+/**
+ * This function builds a prompt that is send to the AI-API
+ * Takes: 
+ * @param {string} task 
+ * @param {string} input 
+ * @returns string
+ */
+
 const buildPrompt = (task, input) => {
   return `
 Du bewertest einen Text im Rahmen eines DTZ-Schreibtests.

@@ -1,3 +1,8 @@
+
+/**
+ * This file states the routes of the app
+ */
+
 import express from "express";
 import { sendPromptToAPI } from "../controllers/sendPrompt.controller.js";
 import { getResult } from "../controllers/getResult.controller.js";
