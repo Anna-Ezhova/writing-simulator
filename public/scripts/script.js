@@ -122,21 +122,4 @@ form.addEventListener("submit", () => {
 });
 
 
-async function getTestOutput(prompt) {
-  //URL!!!
-  const res = await fetch("http://localhost:3000/api/v1/gemini", {
-    method: "POST",
-    headers: {
-      "content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      prompt: prompt,
-    }),
-  });
-  const json = await res.json();
-  console.log(json);
 
-  window.location.href = "/result";
-  /* const text = await json.reply
-    outputText.innerHTML=text */
-}
