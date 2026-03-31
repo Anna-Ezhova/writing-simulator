@@ -1,0 +1,45 @@
+Diese Anwendung war für eine Bacheloarbeit erstellt. 
+Ziel dieser Anwendung ist die Migranten, die Deutsch innerhalb Integrationskurse lernen, bei schriftliche Teil der Deutschprüfung zu unterstützen. Die Nutzer können entweder eine der existierenden Aufgaben oder eigene Aufgabe eigeben und danach die Lösung eingeben. Anschließend wird diese an Google Gemini Api für die Auswertung geschickt. 
+
+Benutzeranweisung:
+
+1. Wählen sie Aufgabe B, fügen Sie folgender Text ein:
+		Liebe Frau Stein,
+		vielen Dank für Ihre E-Mail. Gerne passe ich auf Ihre Katze auf, während Sie im Urlaub sind. Das mache ich sehr gerne.
+		Ich kann jeden Tag zu Ihrer Wohnung kommen. Ich werde die Katze füttern, ihr frisches Wasser geben und das Katzenklo sauber machen. Natürlich spiele ich auch ein bisschen mit ihr, damit sie nicht alleine ist.
+		Bitte schreiben Sie mir noch, wie oft ich die Katze füttern soll und ob sie besonderes Futter bekommt. Gibt es noch etwas, worauf ich achten soll? Zum Beispiel Medikamente oder besondere Gewohnheiten?
+		Ich komme einmal am Tag, am Abend gegen 18 Uhr. Wenn Sie möchten, kann ich Ihnen auch eine Nachricht schicken, damit Sie wissen, dass alles in Ordnung ist.
+		Ich wünsche Ihnen einen schönen Urlaub!
+		Viele Grüße
+		Maria Müller
+
+		(Quelle: generiert durch ChatGPT)
+
+		Anschließend Klicken Sie auf "Überprüfen"
+
+2. Wählen Sie "Eigene Aufgabenstelung, fügen folgende Aufgabe ein:
+
+		Sie möchten einen Erste-Hilfe-Kurs machen. Sie haben noch Fragen.
+		Schreiben Sie eine E-Mail an Herrn Schmidt vom Weiterbildungszentrum. 
+		Schreiben Sie etwas zu folgenden Punkten:
+		o	Warum Sie einen Erste-Hilfe-Kurs machen möchten 
+		o	Ihre Erfahrungen 
+		o	Dauer und Termine des Kurses 
+		o	Kosten
+
+		(Quelle: Übungssatz 1. Deutsch-Test für Zuwanderer A2–B1, g.a.s.t. 2024)
+
+Anschließend fügen sie folgender Text ein:
+
+		Sehr geehrte Herr Schmidt,
+		ich schreibe bezüglich eines Erste-Hilfe-Kurses, dass ihr Bildungszentrum anbietet. Ich bin an den Kurs interessiert da ich viel mit Menschen arbeite und es wäre mir hilfreich zu wissen, was man in Falle eines Unfalls machen sollte. In meinem Heimatland habe ich bereits ein Kurs absolviert also würde ich gern auch in Deutschland meine Kompetenzen nachweisen bzw. sie vertiefen. 
+		Ich würde mich sehr freuen, wenn sie meine Fragen beantwortet würden. Ich frage mich, wie lange der Kurs dauern wird und wann die Termine sind. Auch die Kosten des Kurses würden mich interessieren.
+		Ich freue mich auf die Rückmeldung,
+		Liebe Grüße,
+		Erica Mustermann
+
+(Quelle: Eigener Entwurf)
+
+Anschließend Klicken Sie auf "Überprüfen"
+
+3. Sie können auch andere Texte eingeben zu versuchen um Fehlauswertung zu triggern.
